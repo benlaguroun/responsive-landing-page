@@ -1,8 +1,1 @@
-{
-  "/_app": "pages/_app.js",
-  "/_error": "pages/_error.js",
-  "/_document": "pages/_document.js",
-  "/global-reach": "pages/global-reach.js",
-  "/lightning-fast": "pages/lightning-fast.js",
-  "/reliable-service": "pages/reliable-service.js"
-}
+{}

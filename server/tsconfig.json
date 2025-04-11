@@ -1,15 +1,23 @@
 {
   "compilerOptions": {
-    "target": "ES6",
-    "module": "commonjs",
+    "target": "ES2021",
+    "module": "CommonJS",
     "moduleResolution": "node",
+    "rootDir": "./src",
     "outDir": "./dist",
-    "rootDir": "./src", // Ensure this is set to 'src'
     "strict": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true
+    "forceConsistentCasingInFileNames": true,
+
+    // ✅ Required for NestJS
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+
+    // Optional but helpful
+    "sourceMap": true,
+    "incremental": true
   },
   "include": ["src/**/*.ts"],
-  "exclude": ["node_modules"]
+  "exclude": ["node_modules", "dist"]
 }

@@ -1,26 +1,21 @@
-import { Injectable } from '@nestjs/common';
-
-export type User = {
-  id: string;
-  email: string;
-  password: string;
-};
+import { Injectable } from "@nestjs/common";
 
 @Injectable()
 export class UsersService {
-  private readonly users: User[] = [];
+  private users = [
+    {
+      id: 1,
+      name: "John Doe",
+      email: "john@example.com",
+      password: "hashed-password", // In a real app, you'd hash passwords
+    },
+  ];
 
-  async findByEmail(email: string): Promise<User | undefined> {
-    return this.users.find(user => user.email === email);
+  async findByEmail(email: string) {
+    return this.users.find((user) => user.email === email);
   }
 
-  async create(email: string, password: string): Promise<User> {
-    const user: User = {
-      id: Date.now().toString(),
-      email,
-      password,
-    };
-    this.users.push(user);
-    return user;
+  async findById(id: number) {
+    return this.users.find((user) => user.id === id);
   }
 }

@@ -1,9 +1,9 @@
 import { Module } from "@nestjs/common";
 import { AuthModule } from "./auth/auth.module";
-import { UsersModule } from "./user/users.module"; // Ensure this path is correct
+import { UsersModule } from "./users/users.module";
 
 @Module({
-  imports: [AuthModule, UsersModule], // Import UsersModule here
+  imports: [AuthModule, UsersModule],
   controllers: [],
   providers: [],
 })

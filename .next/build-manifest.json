@@ -34,11 +34,6 @@
       "static/chunks/webpack.js",
       "static/chunks/main.js",
       "static/chunks/pages/lightning-fast.js"
-    ],
-    "/reliable-service": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/reliable-service.js"
     ]
   },
   "ampFirstPages": []

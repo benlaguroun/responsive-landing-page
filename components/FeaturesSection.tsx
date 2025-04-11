@@ -1,4 +1,3 @@
-// components/FeaturesSection.tsx
 import { Feature } from "@/types";
 import FeatureCard from "./FeatureCard"; // Import the FeatureCard component
 import { Globe2, Zap, CheckCircle2 } from "lucide-react";
@@ -9,7 +8,6 @@ const features: Feature[] = [
     description:
       "Connect with customers worldwide through our powerful platform.",
     icon: Globe2,
-    bgImage: "/images/feature-global-reach.jpg",
     link: "/global-reach",
   },
   {
@@ -17,7 +15,6 @@ const features: Feature[] = [
     description:
       "Experience blazing fast performance with our optimized infrastructure.",
     icon: Zap,
-    bgImage: "/images/feature-lightning-fast.jpg",
     link: "/lightning-fast",
   },
   {
@@ -25,7 +22,6 @@ const features: Feature[] = [
     description:
       "Count on our 99.9% uptime guarantee and dedicated support team.",
     icon: CheckCircle2,
-    bgImage: "/images/feature-reliable-service.jpg",
     link: "/reliable-service",
   },
 ];
@@ -43,10 +39,27 @@ const FeaturesSection = () => (
         </p>
       </div>
       <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
-        <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-3">
+        <dl className="grid grid-cols-1 gap-16 sm:grid-cols-2 lg:grid-cols-3 lg:gap-8">
           {features.map((feature) => (
-            <div key={feature.title}>
-              <FeatureCard feature={feature} /> {/* Use FeatureCard here */}
+            <div
+              key={feature.title}
+              className="flex flex-col items-center justify-between p-6 bg-white rounded-lg shadow-lg hover:shadow-xl transition-all duration-300"
+            >
+              <div className="text-center">
+                <feature.icon className="h-12 w-12 text-blue-500 mb-4" />
+                <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-100">
+                  {feature.title}
+                </h3>
+                <p className="mt-4 text-lg text-gray-600 dark:text-gray-400">
+                  {feature.description}
+                </p>
+              </div>
+              <a
+                href={feature.link}
+                className="mt-6 inline-block bg-blue-500 text-white py-2 px-6 rounded-full text-lg hover:bg-blue-600 transition-all duration-300"
+              >
+                Learn More
+              </a>
             </div>
           ))}
         </dl>
