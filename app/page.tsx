@@ -1,7 +1,8 @@
 import { Navbar } from "../components/navbar";
 import HeroSection from "../components/HeroSection";
 import FeaturesSection from "../components/FeaturesSection";
-import CTASection from "../components/CTASection"; // Example of another component
+import CTASection from "../components/CTASection";
+import PricingSection from "../components/PricingSection";
 
 export default function Home() {
   return (
@@ -9,6 +10,7 @@ export default function Home() {
       <Navbar />
       <HeroSection />
       <FeaturesSection />
+      <PricingSection />
       <CTASection />
     </main>
   );
