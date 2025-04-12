@@ -34,7 +34,7 @@ Installation
 
 1. Clone the repository
 
-git clone https://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@github.com/benlaguroun/responsive-landing-page.git
+git clone https://github.com/benlaguroun/responsive-landing-page.git
 Copy code
 
 - For frontend
