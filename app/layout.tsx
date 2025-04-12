@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   description:
     "A beautiful and responsive landing page built with Next.js and TailwindCSS",
   keywords: ["Next.js", "React", "TailwindCSS", "Landing Page"],
-  authors: [{ name: "Your Name" }],
+  authors: [{ name: "mohamed benlaguroun" }],
   openGraph: {
     title: "Modern Landing Page",
     description:
