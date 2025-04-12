@@ -9,7 +9,7 @@ const GlobalReach: FC = () => {
       {/* Hero Banner */}
       <div className="relative w-full h-64 sm:h-80 lg:h-96">
         <Image
-          src="/images/feature-global-each.jpg" // put this in public/images/
+          src="/images/feature-global-each.jpg"
           alt="Global Reach"
           fill
           style={{ objectFit: "cover" }}
