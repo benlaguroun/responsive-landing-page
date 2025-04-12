@@ -1,5 +1,5 @@
-import { Feature } from "@/types";
-import FeatureCard from "./FeatureCard"; // Import the FeatureCard component
+import { Feature } from "../types";
+import FeatureCard from "./FeatureCard";
 import { Globe2, Zap, CheckCircle2 } from "lucide-react";
 
 const features: Feature[] = [

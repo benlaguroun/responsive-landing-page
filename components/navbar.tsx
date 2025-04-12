@@ -2,9 +2,9 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { Button } from "@/components/ui/button";
+import { Button } from "../components/ui/button";
 import { Menu, X } from "lucide-react";
-import { NavItem } from "@/types";
+import { NavItem } from "../types";
 
 const navigation: NavItem[] = [
   { title: "Features", href: "#features" },

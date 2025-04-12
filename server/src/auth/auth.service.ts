@@ -1,27 +1,42 @@
-import { Injectable } from "@nestjs/common";
-import { JwtService } from "@nestjs/jwt";
-import { UserService } from "../user/users.service";
+import { Injectable, UnauthorizedException } from '@nestjs/common';
+import { SignupDto } from './dto/signup.dto';
+import { LoginDto } from './dto/login.dto';
 
 @Injectable()
 export class AuthService {
-  constructor(
-    private userService: UserService,
-    private jwtService: JwtService
-  ) {}
+  private users = [{ id: 1, email: 'test@example.com', password: '123456' }];
 
-  async validateUser(username: string, pass: string): Promise<any> {
-    const user = await this.userService.findOne(username);
-    if (user && user.password === pass) {
-      const { password, ...result } = user;
-      return result;
+  async signup(dto: SignupDto) {
+    const exists = this.users.find((user) => user.email === dto.email);
+    if (exists) {
+      throw new UnauthorizedException('User already exists');
     }
-    return null;
+
+    const newUser = {
+      id: this.users.length + 1,
+      email: dto.email,
+      password: dto.password,
+    };
+
+    this.users.push(newUser);
+    return { message: 'User created', user: newUser };
   }
 
-  async login(user: any) {
-    const payload = { username: user.username, sub: user.userId };
+  async login(dto: LoginDto) {
+    const user = this.users.find(
+      (u) => u.email === dto.email && u.password === dto.password,
+    );
+
+    if (!user) {
+      throw new UnauthorizedException('Invalid credentials');
+    }
+
     return {
-      access_token: this.jwtService.sign(payload),
+      message: 'Login successful',
+      user: {
+        id: user.id,
+        email: user.email,
+      },
     };
   }
 }

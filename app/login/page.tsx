@@ -2,12 +2,12 @@
 
 import { useState } from "react";
 import { useRouter } from "next/navigation";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
-import { useToast } from "@/hooks/use-toast";
+import { Button } from "../../components/ui/button";
+import { Input } from "../../components/ui/input";
+import { Label } from "../../components/ui/label";
+import { useToast } from "../../hooks/use-toast";
 import Link from "next/link";
-import { LoginCredentials } from "@/types";
+import { LoginCredentials } from "../../types";
 
 export default function LoginPage() {
   const router = useRouter();
@@ -36,10 +36,10 @@ export default function LoginPage() {
       }
 
       const data = await response.json();
-      
+
       // Store the token
       localStorage.setItem("token", data.token);
-      
+
       toast({
         title: "Success",
         description: "You have successfully logged in.",
@@ -111,11 +111,7 @@ export default function LoginPage() {
           </div>
 
           <div>
-            <Button
-              type="submit"
-              className="w-full"
-              disabled={isLoading}
-            >
+            <Button type="submit" className="w-full" disabled={isLoading}>
               {isLoading ? "Signing in..." : "Sign in"}
             </Button>
           </div>

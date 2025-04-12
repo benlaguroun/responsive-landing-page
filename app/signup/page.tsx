@@ -2,10 +2,10 @@
 
 import { useState } from "react";
 import { useRouter } from "next/navigation";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
-import { useToast } from "@/hooks/use-toast";
+import { Button } from "../../components/ui/button";
+import { Input } from "../../components/ui/input";
+import { Label } from "../../components/ui/label";
+import { useToast } from "../../hooks/use-toast";
 import Link from "next/link";
 
 interface SignupCredentials {
@@ -133,7 +133,10 @@ export default function SignupPage() {
                 required
                 value={credentials.confirmPassword}
                 onChange={(e) =>
-                  setCredentials({ ...credentials, confirmPassword: e.target.value })
+                  setCredentials({
+                    ...credentials,
+                    confirmPassword: e.target.value,
+                  })
                 }
                 className="mt-1"
               />
@@ -141,11 +144,7 @@ export default function SignupPage() {
           </div>
 
           <div>
-            <Button
-              type="submit"
-              className="w-full"
-              disabled={isLoading}
-            >
+            <Button type="submit" className="w-full" disabled={isLoading}>
               {isLoading ? "Creating account..." : "Create account"}
             </Button>
           </div>

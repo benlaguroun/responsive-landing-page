@@ -1,7 +1,7 @@
-import { Navbar } from "@/components/navbar";
-import HeroSection from "@/components/HeroSection";
-import FeaturesSection from "@/components/FeaturesSection";
-import CTASection from "@/components/CTASection"; // Example of another component
+import { Navbar } from "../components/navbar";
+import HeroSection from "../components/HeroSection";
+import FeaturesSection from "../components/FeaturesSection";
+import CTASection from "../components/CTASection"; // Example of another component
 
 export default function Home() {
   return (
