@@ -5,56 +5,42 @@ import Image from "next/image";
 
 const GlobalReach: FC = () => {
   return (
-    <div className="flex flex-col min-h-screen">
-      {/* Hero Banner */}
-      <div className="relative w-full h-64 sm:h-80 lg:h-96">
-        <Image
-          src="/images/feature-global-each.jpg"
-          alt="Global Reach"
-          fill
-          style={{ objectFit: "cover" }}
-          priority
-        />
-        {/* Dark overlay + Title */}
-        <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
-          <h1 className="text-white text-3xl sm:text-5xl font-bold">
-            Global Reach
-          </h1>
-        </div>
-      </div>
+    <div className="relative w-full h-screen overflow-hidden">
+      {/* Fullscreen Hero Image */}
+      <Image
+        src="/images/feature-global-reach.jpg"
+        alt="Global Reach"
+        fill
+        className="object-cover"
+        priority
+      />
 
-      {/* Content Card */}
-      <main className="flex-grow bg-gray-50 flex items-center justify-center px-4 py-12">
-        <div className="bg-white rounded-2xl shadow-lg p-8 max-w-3xl w-full">
+      {/* Dark Overlay with Centered Content */}
+      <div className="absolute inset-0 bg-black/70 flex flex-col items-center justify-center text-center px-6">
+        <div className="bg-white/5 backdrop-blur-md p-6 sm:p-10 rounded-2xl shadow-lg max-w-2xl w-full">
           <div className="flex justify-center mb-6">
-            <div className="p-4 bg-primary rounded-full">
+            <div className="p-4 bg-primary rounded-full shadow-lg">
               <Globe2 className="h-10 w-10 text-white" />
             </div>
           </div>
-          <h2 className="text-2xl sm:text-3xl font-semibold text-gray-900 text-center mb-4">
-            Connect Globally
-          </h2>
-          <p className="text-lg text-gray-700 mb-6 text-center">
-            Our platform lets you reach customers around the world with ease.
-            Expand your brand into new markets and scale your business
-            effortlessly.
+
+          <h1 className="text-white text-3xl sm:text-5xl font-extrabold mb-4">
+            Global Reach
+          </h1>
+          <p className="text-gray-200 text-lg mb-8">
+            Reach customers around the world with powerful tools for scaling
+            internationally. Go global with confidence.
           </p>
-          <p className="text-base text-gray-600 mb-8">
-            With powerful localization tools, multi-language support, and 24/7
-            global infrastructure, you’ll never miss an opportunity to grow.
-            Join businesses everywhere who trust us to power their international
-            expansion.
-          </p>
-          <div className="flex justify-center">
-            <a
-              href="/signup"
-              className="bg-primary text-white py-2 px-6 rounded-full hover:bg-primary-dark transition"
-            >
-              Get Started
-            </a>
-          </div>
+
+          {/* Fancy CTA Button */}
+          <a
+            href="/signup"
+            className="inline-block bg-gradient-to-r from-primary to-primary-dark hover:from-primary-dark hover:to-primary transition-all text-white font-semibold py-3 px-8 rounded-full shadow-xl text-lg"
+          >
+            Get Started
+          </a>
         </div>
-      </main>
+      </div>
     </div>
   );
 };

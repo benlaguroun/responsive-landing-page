@@ -5,42 +5,42 @@
   "devFiles": [],
   "ampDevFiles": [],
   "lowPriorityFiles": [
-    "static/2AKIjnK7I3jMRyx_DCEOZ/_buildManifest.js",
-    "static/2AKIjnK7I3jMRyx_DCEOZ/_ssgManifest.js"
+    "static/ss1gsJRHoAIsEQ6408X1-/_buildManifest.js",
+    "static/ss1gsJRHoAIsEQ6408X1-/_ssgManifest.js"
   ],
   "rootMainFiles": [
-    "static/chunks/webpack-ecc8a74cd0bed3ae.js",
+    "static/chunks/webpack-aa2e992df6f7144c.js",
     "static/chunks/fd9d1056-9bc591f40a60a661.js",
     "static/chunks/864-08480afced3b3961.js",
     "static/chunks/main-app-be5f39c2324cfe48.js"
   ],
   "pages": {
     "/_app": [
-      "static/chunks/webpack-ecc8a74cd0bed3ae.js",
+      "static/chunks/webpack-aa2e992df6f7144c.js",
       "static/chunks/framework-be057f73ee9d81d9.js",
       "static/chunks/main-57eabc6cf458444e.js",
       "static/chunks/pages/_app-27277a117f49dcf1.js"
     ],
     "/_error": [
-      "static/chunks/webpack-ecc8a74cd0bed3ae.js",
+      "static/chunks/webpack-aa2e992df6f7144c.js",
       "static/chunks/framework-be057f73ee9d81d9.js",
       "static/chunks/main-57eabc6cf458444e.js",
       "static/chunks/pages/_error-91a5938854a6f402.js"
     ],
     "/global-reach": [
-      "static/chunks/webpack-ecc8a74cd0bed3ae.js",
+      "static/chunks/webpack-aa2e992df6f7144c.js",
       "static/chunks/framework-be057f73ee9d81d9.js",
       "static/chunks/main-57eabc6cf458444e.js",
-      "static/chunks/pages/global-reach-9766a8bffe163c21.js"
+      "static/chunks/pages/global-reach-cd0575f2d2756f62.js"
     ],
     "/lightning-fast": [
-      "static/chunks/webpack-ecc8a74cd0bed3ae.js",
+      "static/chunks/webpack-aa2e992df6f7144c.js",
       "static/chunks/framework-be057f73ee9d81d9.js",
       "static/chunks/main-57eabc6cf458444e.js",
       "static/chunks/pages/lightning-fast-2b99ba8a98c72995.js"
     ],
     "/reliable-service": [
-      "static/chunks/webpack-ecc8a74cd0bed3ae.js",
+      "static/chunks/webpack-aa2e992df6f7144c.js",
       "static/chunks/framework-be057f73ee9d81d9.js",
       "static/chunks/main-57eabc6cf458444e.js",
       "static/chunks/pages/reliable-service-e685daa15fb15f99.js"
