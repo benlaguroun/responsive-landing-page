@@ -1,4 +1,3 @@
-// components/FeatureCard.tsx
 import Link from "next/link";
 import { FC } from "react";
 import { Feature } from "../types";

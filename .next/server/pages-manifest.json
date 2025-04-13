@@ -1,11 +1,6 @@
 {
-  "/api/auth/login": "pages/api/auth/login.js",
-  "/_error": "pages/_error.js",
-  "/global-reach": "pages/global-reach.html",
-  "/lightning-fast": "pages/lightning-fast.html",
-  "/reliable-service": "pages/reliable-service.html",
   "/_app": "pages/_app.js",
-  "/api/auth/signup": "pages/api/auth/signup.js",
+  "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/404": "pages/404.html"
+  "/gallery": "pages/gallery.js"
 }
