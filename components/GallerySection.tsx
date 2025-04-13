@@ -49,7 +49,7 @@ const GallerySection = () => {
           </h2>
           <Link
             href="/gallery"
-            className="px-6 py-2 rounded-full bg-blue-600 text-white hover:bg-blue-700 transition duration-300"
+            className="px-6 py-2 rounded-full bg-black text-white hover:bg-blue-700 transition duration-300"
           >
             View All
           </Link>

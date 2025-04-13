@@ -46,7 +46,7 @@ const FeaturesSection = () => (
               className="flex flex-col items-center justify-between p-6 bg-white rounded-lg shadow-lg hover:shadow-xl transition-all duration-300"
             >
               <div className="text-center">
-                <feature.icon className="h-12 w-12 text-blue-500 mb-4" />
+                <feature.icon className="h-12 w-12 text-black mb-4" />
                 <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-100">
                   {feature.title}
                 </h3>
@@ -56,7 +56,7 @@ const FeaturesSection = () => (
               </div>
               <a
                 href={feature.link}
-                className="mt-6 inline-block bg-blue-500 text-white py-2 px-6 rounded-full text-lg hover:bg-blue-600 transition-all duration-300"
+                className="mt-6 inline-block bg-black text-white py-2 px-6 rounded-full text-lg hover:bg-gray-800 transition-all duration-300"
               >
                 Learn More
               </a>

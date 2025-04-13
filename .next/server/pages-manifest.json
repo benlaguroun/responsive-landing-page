@@ -1,7 +1,7 @@
 {
+  "/_app": "pages/_app.js",
   "/gallery": "pages/gallery.html",
   "/global-reach": "pages/global-reach.html",
-  "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/lightning-fast": "pages/lightning-fast.html",
   "/reliable-service": "pages/reliable-service.html",
