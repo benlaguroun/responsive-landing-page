@@ -1,4 +1,4 @@
-- Responsive Landing Page with Auth
+- Responsive Landing Page
 
 A fully responsive and SEO-optimized landing page built using
 Next.js (frontend) and NestJS (backend) with TypeScript and Tailwind CSS. Includes user authentication and follows best practices for performance and reusability.
@@ -63,7 +63,7 @@ app/
 ├── layout.tsx // App layout with theme providers
 ├── page.tsx // Landing page
 ├── login/ // Login form page
-├── signup/ // Signup form (optional)
+├── signup/ // Signup form
 components/
 ├── Header.tsx // Top navbar
 ├── Hero.tsx // Main hero section
@@ -82,25 +82,24 @@ Returns JWT token
 
 Type-safe using DTOs and interfaces
 
-✅ Features
-✅ SEO optimized (title + meta tags)
+- Features
+- SEO optimized (title + meta tags)
 
-✅ Fully responsive
+- Fully responsive
 
-✅ Dark mode support
+- Dark mode support
 
-✅ Type-safe (no any)
+- Type-safe (no any)
 
-✅ Dynamic rendering of content (features, etc.)
+- Dynamic rendering of content (features, etc.)
 
-✅ Optimized images using next/image
+- Optimized images using next/image
 
-- Bonus Optimizations
-  Used next/image for performance image loading
+- Used next/image for performance image loading
 
-Tailwind’s utility classes for lightweight styling
+- Tailwind’s utility classes for lightweight styling
 
-Clean and reusable component structure
+- Clean and reusable component structure
 
 - Collaborators
   Invite sent to @ie76

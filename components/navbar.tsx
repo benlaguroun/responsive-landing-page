@@ -8,7 +8,7 @@ import { NavItem } from "../types";
 
 const navigation: NavItem[] = [
   { title: "Features", href: "#features" },
-  { title: "Testimonials", href: "#testimonials" },
+  { title: "gallery", href: "gallery" },
   { title: "Pricing", href: "#pricing" },
   { title: "Contact", href: "#contact" },
 ];
