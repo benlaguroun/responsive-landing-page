@@ -8,8 +8,7 @@ const HeroSection = () => (
     {/* Background Image */}
     <div className="absolute inset-0 z-0">
       <Image
-        src="/images/hero.png
-        "
+        src="/images/hero.png"
         alt="Hero background"
         layout="fill"
         objectFit="cover"
